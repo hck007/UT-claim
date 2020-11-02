@@ -1,0 +1,112 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<style>
+    #main-content{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: block;
+    }
+    #question{
+        font-size: 30px;
+    }
+</style>
+
+<div id = "main-content">
+    <crowd-form>
+        <crowd-instructions link-text="View instructions" link-type="button">
+            <short-summary>
+                <p>This survey is intended to improve your experience of learning 
+            in UT Claim-Checking group. It takes about 5 minutes. We really appreciate your patience and time</p>
+            </short-summary>
+
+        </crowd-instructions>
+
+
+        <div>
+            <h2>Question 1:</h2>
+            <p>Overall, how would you rate your experience of learning in UT Claim-Checking group?</p>
+                <ul style = "list-style-type: none">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="option1.1" value="Option 1">Excellent</crowd-radio-button><br>
+                        <crowd-radio-button name="option1.2" value="Option 2">Good</crowd-radio-button><br>
+                        <crowd-radio-button name="option1.3" value="Option 3">Neutral</crowd-radio-button><br>
+                        <crowd-radio-button name="option1.4" value="Option 4">Not Good</crowd-radio-button><br>
+                        <crowd-radio-button name="option1.5" value="Option 5">Awful</crowd-radio-button><br>
+                    </crowd-radio-group>
+                </ul>
+        </div>
+        <div>
+            <h2>Question 2:</h2>
+            <p>How often are you able to attend weekly UT Claim-Checking group meetings?</p>
+            <ul style = "list-style-type: none">
+                <crowd-radio-group>
+                    <crowd-radio-button name ="option2.1" value="Option 1"> Always </crowd-radio-button><br>
+                    <crowd-radio-button name ="option2.2" value="Option 2"> Sometimes </crowd-radio-button><br>
+                    <crowd-radio-button name ="option2.3" value="Option 3"> Rarely </crowd-radio-button><br>
+                    <crowd-radio-button name ="option2.4" value="Option 4"> Never </crowd-radio-button><br>
+                </crowd-radio-group>
+            </ul>
+        </div>
+        <div style="margin-top: 8px">
+            <h2>Question 3:</h2>
+            <p>How much time are you able to spend working on your project related to the group every week?</p>
+                <select name="option3" id="dropdown">
+                <option selected>Choose...</option>
+                <option>Less than 4 hours</option>
+                <option>4 to 6 hours</option>
+                <option>6 to 8 hours</option>
+                <option>8 to 10 hours</option>
+                <option>More than 10 hours</option>
+                </select>
+        </div>
+        <div style="margin-top: 8px">
+            <h2>Question 4:</h2>
+            <p>How often do you feel overwhelmed by your project in the UT claim-checking group because of having no prior knowledge of the topic?</p>
+                <ul style = "list-style-type: none">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="option4.1" value="Option 1">Always</crowd-radio-button><br>
+                        <crowd-radio-button name="option4.2" value="Option 2">Sometimes</crowd-radio-button><br>
+                        <crowd-radio-button name="option4.3" value="Option 3">Rarely</crowd-radio-button><br>
+                        <crowd-radio-button name="option4.4" value="Option 4">Never</crowd-radio-button><br>
+                    </crowd-radio-group>
+                </ul>
+        </div>
+        <div style="margin-top: 8px">
+            <h2>Question 5:</h2>
+            <p>How comfortable do you feel asking questions in the slack channel?</p>
+                <ul style = "list-style-type: none">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="option5.1" value="Option 1">Extremely Comfortable</crowd-radio-button><br>
+                        <crowd-radio-button name="option5.2" value="Option 2">Somewhat Comfortable</crowd-radio-button><br>
+                        <crowd-radio-button name="option5.3" value="Option 3">Somewhat Uncomfortable</crowd-radio-button><br>
+                        <crowd-radio-button name="option5.4" value="Option 4">Extremely Uncomfortable</crowd-radio-button><br>
+                    </crowd-radio-group>
+                </ul>
+        </div>
+        <div style="margin-top: 8px">
+            <h2>Question 6:</h2>
+            <p>How useful were the materials to your further education or career?</p>
+                <ul style = "list-style-type: none">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="option6.1" value="Option 1">Very Useful</crowd-radio-button><br>
+                        <crowd-radio-button name="option6.2" value="Option 2">Useful</crowd-radio-button><br>
+                        <crowd-radio-button name="option6.3" value="Option 3">Somewhat Useful</crowd-radio-button><br>
+                        <crowd-radio-button name="option6.4" value="Option 4">Not Useful</crowd-radio-button><br>
+                        <crowd-radio-button name="option6.5" value="Option 5">Not Useful at all</crowd-radio-button><br>
+                    </crowd-radio-group>
+                </ul>
+        </div>
+        <div>
+            <h2>Question 7: </h2>
+            <p>What suggestions do you have to improve your learning as a part of the group?</p>
+            <crowd-text-area name="option7" placeholder="Type your response here..."></crowd-text-area>
+        </div>
+        <div>
+            <h2>Question 8:</h2>
+            <p>If you are unable to attend the group meeting, please tell us why</p>
+            <crowd-text-area name="option8" placeholder="Type your response here..."></crowd-text-area>
+        </div>
+    </crowd-form>
+</div>
